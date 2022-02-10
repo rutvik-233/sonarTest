@@ -11,7 +11,7 @@
     
 <div id="mySidenav" class="sidenav">
   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <a ><b>HTML</b></a>
+  <a ><strong>HTML</strong></a>
   <br>
   <a >Day 1</a>
   <a href="../Practice/day1_practice.html">&nbsp&nbsp Practice</a>
@@ -33,11 +33,13 @@
 </div>  
 <br>
 <h2>HTML > Day 1 > Assignment</h2>
-<h3>Employee Form</h3>
+<hr>
 
 
   <form>
-    <table class="table" >
+    <table role="none"  class="table" >
+      <caption>Employee Form</caption>
+     
       <tr>
           <td style="width: 50%">
              <label>First name *</label><br />
@@ -46,7 +48,7 @@
           <td style="width: 50%">
              <label>Last name *</label><br />
              <input name="Last_Name" type="text" maxlength="50" style="width:98%;"  required/>
-          </td>
+          </td >
        </tr>
        <tr>
           <td colspan="2">
