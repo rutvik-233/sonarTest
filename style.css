@@ -173,7 +173,6 @@ footer {
 
 
   .button {
-    background-color: #4CAF50; /* Green */
     font-family: 'Times New Roman', Times, serif;
     border: none;
     color: white;
@@ -188,9 +187,11 @@ footer {
 
   }
 
-  header img{
-    float: left;
-  }
+ #img1{
+  float: left;
+  min-width: 0%;
+  object-fit: none;
+ }
 
 
   .flex-container {
