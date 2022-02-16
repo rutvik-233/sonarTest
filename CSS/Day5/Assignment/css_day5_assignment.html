@@ -66,7 +66,6 @@
   background-color: rgb(255, 0, 0);
   border-radius: 23px;
   padding: 3px;
-  margin-right: 60px;
   margin-bottom: 50px;
   
 }
@@ -83,6 +82,9 @@
     #insideTopBar {
         display: none;
     }
+    div div a{
+  font-size: 25px;
+}
 
   }
 
@@ -108,7 +110,7 @@
     #insideTopBar{
       grid-column-start: 1;
         grid-column-end: 5;
-
+        margin-top: 25px;
     }
     ul {
   list-style-type: none;
@@ -136,8 +138,8 @@ h3{
 
       }
 
-div a{
-  font-size: 32px;
+div div a{
+  font-size: 34px;
 }
 
 
@@ -157,7 +159,7 @@ div a{
       <a ><strong>CSS</strong></a>
       <br>
       <a >Day 1</a>
-      <a >&nbsp&nbsp Practice</a>
+      <a href="../../Day1/Practice/css_day1_practice.html"  >&nbsp&nbsp Practice</a>
       <a href="../../Day1/Assignment/cssResume.html">&nbsp&nbsp Assignment</a>
 
       <a >Day 2</a>
@@ -173,7 +175,6 @@ div a{
       <a  href="../../Day4/Assignment/css_day4_assignment.html" >&nbsp&nbsp Assignment</a>
 
       <a >Day 5</a>
-      <a  >&nbsp&nbsp Practice</a>
       <a style="color: rgb(255, 155, 5);" href="css_day5_assignment.html" >&nbsp&nbsp Assignment</a>
     
       <a ></a>
@@ -185,6 +186,7 @@ div a{
 
   <div class="navbar">
     <a id="hamburger" > <span  onclick="openNav()">&#9776;</span> </a>
+    <a id="hamburgerM" > <span  onclick="openNavM()">&#9776;</span> </a>
     <a href="/index.html">Home</a>
     <a  href="../../../HTML/Day1/Assignment/emp.html">HTML</a>
     <a class="active" href="../../Day1/Assignment/cssResume.html" >CSS</a>
@@ -243,56 +245,61 @@ div a{
     <a target="blank"  href="https://twitter.com/K_RutviK_K"><img  alt="logo" style="width: 100px;min-width: 0%;padding-right: 30px;" src="https://img.icons8.com/fluency/96/000000/twitter.png"/></a>
         </div>
 
-    
+    <div id="about"></div>
 
 
         <h1 id="education" >Eduction</h1>
 
         <div>
-          <a style="font-size: 25px; color: rgb(255, 155, 5); font-weight: bold;">BACHELOR OF ENGINEERING
+          <a style="padding-left: 30px; color: rgb(255, 155, 5); font-weight: bold;">BACHELOR OF ENGINEERING
             <hr>
           </a>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp 2018-2022</a>
+          <div style="padding-left: 70px;">
+          <a >2018-2022</a>
           <br>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp Darshan University, Rajkot, Gujarat</a>
+          <a >Darshan University, Rajkot, Gujarat</a>
           <br>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp I Deeply Study engineering core subjects and all fundamentals.</a>
+          <a >I Deeply Study engineering core subjects and all fundamentals.</a>
           <br>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp Lead in the design, development, and implementation of the graphic and layout.</a>
+          <a >Lead in the design, development, and implementation of the graphic and layout.</a>
       </div>
+    </div>
   <br>
   <br>
   <br>
   
         <div>
-            <a style="font-size: 25px; color: rgb(255, 155, 5); font-weight: bold;">HIGHER SECONDARY (11TH-12TH) 
+            <a style="padding-left: 30px; color: rgb(255, 155, 5); font-weight: bold;">HIGHER SECONDARY (11TH-12TH) 
               <hr>
             </a>
-            <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp 2017 - 2018</a>
+            <div style="padding-left: 70px;">
+            <a >2017 - 2018</a>
             <br>
-            <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp JNV, Surendranagar, Gujarat</a>
+            <a >JNV, Surendranagar, Gujarat</a>
             <br>
-            <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp Very Well Study in my school while focused more on Maths and Physics.</a>
+            <a >Very Well Study in my school while focused more on Maths and Physics.</a>
+        </div>
         </div>
   <br>
   <br>
   <br>
         <div>
-          <a style="font-size: 25px; color: rgb(255, 155, 5); font-weight: bold;">SECONDARY SCHOOL CERTIFICATE(10TH)
+          <a style="padding-left: 30px; color: rgb(255, 155, 5); font-weight: bold;">SECONDARY SCHOOL CERTIFICATE(10TH)
             <hr>
           </a>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp 2016</a>
+                  <div style="padding-left: 70px;">
+          <a >2016</a>
           <br>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp JNV, Surendranagar, Gujarat</a>
+          <a >JNV, Surendranagar, Gujarat</a>
           <br>
-          <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp I used more focus on statistics, calculus, algebra, geometry and trigonometry.</a>
+          <a >I used more focus on statistics, calculus, algebra, geometry and trigonometry.</a>
       </div>
-  
+        </div>
   
   
   
         <h1 id="skills" >Skills</h1>
-    
+        <div style="padding: 0px 50px;">
         <div id="progressbar">
           <div style="  width: 95%;"><h3 style="text-align: center; color:white; font-size: 25px;">HTML</h3></div>
         </div>
@@ -319,7 +326,8 @@ div a{
         <div id="progressbar">
           <div style="  width: 80%;"><h3 style="text-align: center; color:white; font-size: 25px;">Java</h3></div>
         </div>
- 
+        
+      </div>
 
 
 
@@ -329,18 +337,19 @@ div a{
 
       <h1  id="experience" >Experience</h1>
       <div>
-        <a style="font-size: 25px; color: rgb(255, 155, 5); font-weight: bold;">DotNet Software Trainee
+        <a style="padding-left: 30px; color: rgb(255, 155, 5); font-weight: bold;">DotNet Software Trainee
           <hr>
         </a>
-        <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp 2022-20**</a>
+        <div style="padding-left: 70px;">
+        <a > 2022-20**</a>
         <br>
-        <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp Radixweb, Ahmedabad, Gujarat</a>
+        <a > Radixweb, Ahmedabad, Gujarat</a>
         <br>
-        <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp I Deeply Study engineering core subjects and all fundamentals.</a>
+        <a > I Deeply Study engineering core subjects and all fundamentals.</a>
         <br>
-        <a style="font-size: 25px;">&nbsp&nbsp&nbsp&nbsp&nbsp Lead in the design, development, and implementation of the graphic and layout.</a>
+        <a >I Lead in the design, development, and implementation of the graphic and layout.</a>
     </div>
-
+  </div>
 
 
 
@@ -352,12 +361,12 @@ div a{
 
  
       <h1  style="font-size: 60px;"></h1>
-
-      <video controls width="95%" src="https://noadsmovie.tk/0:/CloudDrive/Matrix.Resurrections.2021.1080p.WEB-DL.Hindi-English.5.1.x264-KatmovieHD.nz.mkv">
+        <div style="text-align: center;">
+      <video  controls width="95%" src="https://noadsmovie.tk/0:/CloudDrive/Matrix.Resurrections.2021.1080p.WEB-DL.Hindi-English.5.1.x264-KatmovieHD.nz.mkv">
        
          <track label="English" kind="captions" srclang="en" src="resources/myvideo-en.vtt" default>
       </video>
-
+      </div>
 
   </div>
 
@@ -373,17 +382,23 @@ div a{
 
 
 
-
-  <script>
+<script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "330px";
+    document.getElementById("main").style.marginLeft = "330px";
   }
+
+  function openNavM() {
+    document.getElementById("mySidenav").style.width = "330px";
+    document.getElementById("main").style.marginLeft = "0px";
+  }
+  
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+  
   </script>
 
 

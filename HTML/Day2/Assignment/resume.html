@@ -17,7 +17,7 @@
   <a href="../../Day1/Practice/day1_practice.html">&nbsp&nbsp Practice</a>
   <a href="../Assignment/emp.html">&nbsp&nbsp Assignment</a>
   <a >Day 2</a>
-  <a >&nbsp&nbsp Practice</a>
+
   <a style="color: rgb(255, 155, 5);" href="resume.html">&nbsp&nbsp Assignment</a>
 </div>
 
@@ -25,6 +25,7 @@
 
   <div class="navbar">
     <a id="hamburger" > <span  onclick="openNav()">&#9776;</span> </a>
+    <a id="hamburgerM" > <span  onclick="openNavM()">&#9776;</span> </a>
     <a href="/index.html">Home</a>
     <a class="active" href="../../Day1/Assignment/emp.html">HTML</a>
     <a href="../../../CSS/Day1/Assignment/cssResume.html" >CSS</a>
@@ -90,16 +91,23 @@
 
 
 
-  <script>
+<script>
   function openNav() {
-    document.getElementById("mySidenav").style.width = "250px";
-    document.getElementById("main").style.marginLeft = "250px";
+    document.getElementById("mySidenav").style.width = "330px";
+    document.getElementById("main").style.marginLeft = "330px";
   }
+
+  function openNavM() {
+    document.getElementById("mySidenav").style.width = "330px";
+    document.getElementById("main").style.marginLeft = "0px";
+  }
+  
   
   function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("main").style.marginLeft= "0";
   }
+  
   </script>
 
 
