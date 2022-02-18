@@ -1,0 +1,5 @@
+Repository-->https://github.com/K-RutviK-K/trainingDay-5
+Topics Learned:
+	         Cherry-pick
+	         Rebase
+	         Git Practice

@@ -1,0 +1,9 @@
+Repository-->http://64.20.53.52:8060/svn/Training-Feb-2021/Batch22/2468-Rutvik-Feb22/
+
+Topics Learned:
+	         SVN:
+	         Import the repository
+	         Checkout the repository
+	         Commit/update
+	         Resolving Conflict(Merge)
+	         Adding to Ignore List

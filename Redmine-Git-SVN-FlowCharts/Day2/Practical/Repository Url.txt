@@ -1,0 +1,6 @@
+Repository-->https://github.com/K-RutviK-K/trainingDay-2
+
+Total Commits-->12
+
+Conflict Resolve-->ed4e487aeb70ecbf48fa9fcf69ea736b254c2e1c,
+	               e33e783a09a532f5e4bf6979079f1b074e8bdade

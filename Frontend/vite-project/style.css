@@ -1,0 +1,358 @@
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+
+:root{
+  --sideBarWidth:400px;
+}
+
+
+body{
+  margin: 0px;
+  margin-top: 48px;
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1000px) {
+
+
+
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 45px;
+    color: #ffffffff;
+    display: block;
+    transition: .7s;
+  }
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 45px;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height:48px; */
+  }
+  
+
+
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: rgb(255, 155, 5);
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 48px;
+    height: 1500px;
+  }
+
+
+
+  #hamburgerM{
+    float: left;
+    display: block;
+    color: rgb(255, 155, 5);
+    text-align: center;
+    padding: 6.5px 15px;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #hamburger {
+    display: none;
+}
+  
+.sidenav {
+  height: 100%;
+  width: 0px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111111c0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+
+}
+
+
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 40px;
+  font-size: 115px;
+  margin-left: 17px;
+  color: #ff9b05;
+
+  font-weight: bolder;
+}
+
+#main {
+  transition: margin-left 1.1s;
+  margin-top: 80px;
+}
+
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  @media (min-width: 1000px) {
+  .navbar {
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height:48px; */
+  }
+  
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+
+  .navbar a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+  .navbar a.active {
+    background-color: rgb(255, 155, 5);
+    color: white;
+  }
+  
+  .main {
+    padding: 16px;
+    margin-top: 48px;
+    height: 1500px;
+  }
+
+
+
+  #hamburger{
+    float: left;
+    display: block;
+    color: rgb(255, 155, 5);
+    text-align: center;
+    padding: 2px 10px;
+    text-decoration: none;
+    font-size: 34px;
+  }
+  #hamburgerM {
+    display: none;
+}
+  
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 35px;
+  color: #818181;
+  display: block;
+  transition: .7s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 45px;
+  margin-left: 50px;
+  color: rgb(255, 155, 5);
+}
+
+#main {
+  transition: margin-left 1.1s;
+
+}
+  
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+  header {
+    background-color: #666;
+    float: left;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  
+
+
+
+  
+  .div2 {
+    background: yellow;
+    float: left;
+    width: 15%;
+    height: 490px;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .div3 {
+    background: green;
+    float: left;
+    width: 85%;
+    height: 490px;
+    font-size: 30px;
+    text-align: center;
+  }
+footer {
+    background-color: blue;
+    float: left;
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+    text-align: center;
+  }
+
+
+  .button {
+    font-family: 'Times New Roman', Times, serif;
+    border: none;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 15px 1px;
+    cursor: pointer;
+    background-color: rgb(255, 155, 5);
+
+  }
+
+ #img1{
+  float: left;
+  min-width: 0%;
+  object-fit: none;
+ }
+
+
+  .flex-container {
+    display: flex;
+    text-align: center;
+    flex-wrap: nowrap;
+    background-color: rgb(255, 155, 5);
+  }
+  
+  .flex-container > a {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+    line-height: 75px;
+    font-size: 30px;
+  }
+
+
+
+
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+li {
+  flex-grow: 1;
+}
+
+
+img {
+  max-height: 100%;
+  min-width: 100%;
+  object-fit: cover;
+
+}
