@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="../../../assets/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
- 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp">
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" ></script>
@@ -29,7 +30,7 @@
 #topnav
 {
 	background-color: white;
-	height: 70px;
+	height: 76px;
 	border-bottom: solid #0069d9 1px;
 	box-shadow: solid #0069d9 5px;
 	opacity: 80%;
@@ -78,6 +79,17 @@
 {
 	background-color: #297889;
 }
+
+
+.blue-text
+{
+	color: #297889
+}
+
+#about
+{
+	background-color : #f8f9fa;
+}
   </style>
 
   <body>
@@ -125,8 +137,9 @@
       <a href="../../Day2/Practice/bootstrap_day2_practice.html" class="w3-bar-item w3-button">Day 2</a>
       <a href="../../Day3/Practice/bootstrap_day3_practice.html" class="w3-bar-item w3-button">Day 3 (Practice)</a>
       <a href="../../Day3/Assignment/bootstrap_day3_assignment.html" class="w3-bar-item w3-button">Day 3 (Assignment)</a>
-      <a href="../Practice/bootstrap_day4_practice.html" class="w3-bar-item w3-button">Day 4 (Practice)</a>
-      <a href="bootstrap_day4_assignment.html" class="w3-bar-item w3-button">Day 4 (Assignment)</a>
+      <a href="bootstrap_day4_assignment.html" class="w3-bar-item w3-button">Day 4</a>
+      <a href="../../Day5/Assignment/bootstrap_day5_assignment.html" class="w3-bar-item w3-button">Day 5</a>
+
     </div>
 
 
@@ -148,7 +161,7 @@
         <div id="navcollapse" style="flex-grow: inherit;" class="collapse navbar-collapse">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link" href="#topesction">Home</a>
+              <a class="nav-link" href="#topsection">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -201,14 +214,89 @@
 
 
 
+    <div id="card-region" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-primary my-2 my-lg-0">
+              <div class="card-body">
+                <h3 class="card-title blue-text">Be Better</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center text-white blue-bg my-2 my-lg-0">
+              <div class="card-body">
+                <h3 class="card-title">Be Smarter</h3>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center border-primary my-2 my-lg-0">
+              <div class="card-body">
+                <h3 class="card-title blue-text">Be Faster</h3>
+                <p class="text-muted">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-3">
+            <div class="card text-center text-white blue-bg my-2 my-lg-0">
+              <div class="card-body">
+                <h3 class="card-title">Be Stronger</h3>
+                <p class="text-white">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eveniet, deserunt.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  
 
 
-
-
-
-
-
-
+    <div id="about" class="py-5">
+      <div class="container text-center">
+        <div class="row">
+          <div class="col-6 offset-3">
+            <h1 class="blue-text subhead">Why This Book?</h1>
+            <p class="lead mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus obcaecati alias rerum dolore fugiat debitis?</p>
+            <hr>
+          </div>
+        </div>
+        <div class="card mt-5">
+              <div class="card-header">
+                  <h5 ><a href="#c1" data-toggle="collapse" class="text-dark"><i class="fas fa-arrow-circle-down"></i> Get Inspired </a> </h5>
+              </div>
+          <div id="c1" class="collapse show">
+                  <div class="card-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti facilis consequatur tenetur nam pariatur fuga nisi!
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                  <h5 ><a href="#c2" data-toggle="collapse" class="text-dark"><i class="fas fa-arrow-circle-down"></i> Gain This Knowledge </a></h5>
+              </div>
+          <div id="c2" class="collapse">
+                  <div class="card-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti facilis consequatur tenetur nam pariatur fuga nisi!
+                  </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-header">
+                  <h5 > <a href="#c3" data-toggle="collapse" class="text-dark"><i class="fas fa-arrow-circle-down"></i> Open Your Mind </a> </h5>
+              </div>
+          <div id="c3" class="collapse">
+                  <div class="card-body">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit odit laborum qui, debitis, sequi dolores nobis mollitia labore quasi earum laboriosam nihil cupiditate magnam iusto nostrum doloremque accusantium repudiandae expedita autem et, repellendus suscipit consequatur! Alias, maiores amet sunt ab inventore illo, deleniti facilis consequatur tenetur nam pariatur fuga nisi!
+                  </div>
+              </div>
+            </div>
+         </div>
+      </div>
 
 
 
