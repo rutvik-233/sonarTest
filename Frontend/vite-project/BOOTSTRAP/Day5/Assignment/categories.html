@@ -11,12 +11,12 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"  crossorigin="anonymous"   integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" ></script>
 
-    
-    <title>Rutvik's Work</title>
+   
+    <title>Bootstrap Theme</title>
   </head>
 
   <body>
-    <nav aria-label="Site menu" class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark p-0">
       <div class="container">
         <a href="bootstrap_day5_assignment.html" class="navbar-brand">Blogen</a>
         <button
@@ -32,10 +32,10 @@
               <a href="bootstrap_day5_assignment.html" class="nav-link">Dashboard</a>
             </li>
             <li class="nav-item px-2">
-              <a href="posts.html" class="nav-link active">Posts</a>
+              <a href="posts.html" class="nav-link">Posts</a>
             </li>
             <li class="nav-item px-2">
-              <a href="categories.html" class="nav-link">Categories</a>
+              <a href="categories.html" class="nav-link active">Categories</a>
             </li>
             <li class="nav-item px-2">
               <a href="users.html" class="nav-link">Users</a>
@@ -49,20 +49,20 @@
                 class="nav-link dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
-                <em class="bi bi-person"></em>Welcome RutviK
+                <em class="bi bi-person"></em> Welcome RutviK
               </a>
               <div class="dropdown-menu">
                 <a href="profile.html" class="dropdown-item">
-                  <em class="bi bi-person-circle"></em>Profile
+                  <em class="bi bi-person-circle"></em> Profile
                 </a>
                 <a href="settings.html" class="dropdown-item">
-                  <em class="bi bi-gear"></em>Settings
+                  <em class="bi bi-gear"></em> Settings
                 </a>
               </div>
             </li>
             <li class="nav-item">
               <a href="login.html" class="nav-link">
-                <em class="bi bi-person-x"></em>Logout
+                <em class="bi bi-person-x"></em> Logout
               </a>
             </li>
           </ul>
@@ -70,11 +70,11 @@
       </div>
     </nav>
 
-    <header id="main-header" class="py-2 bg-primary text-white">
+    <header id="main-header" class="py-2 bg-success text-white">
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <h1><em class="bi bi-pencil-fill text-white"></em>Posts</h1>
+            <h1><em class="bi bi-folder-fill text-white"></em> Categories</h1>
           </div>
         </div>
       </div>
@@ -88,10 +88,10 @@
               <input
                 type="text"
                 class="form-control"
-                placeholder="Search Posts..."
+                placeholder="Search Categories..."
               />
               <div class="input-group-append">
-                <button class="btn btn-primary">Search</button>
+                <button class="btn btn-success">Search</button>
               </div>
             </div>
           </div>
@@ -99,20 +99,19 @@
       </div>
     </section>
 
-    <section id="posts">
+    <section id="categories">
       <div class="container">
         <div class="row">
           <div class="col">
             <div class="card">
               <div class="card-header">
-                <h4>Latest Posts</h4>
+                <h4>Latest Categories</h4>
               </div>
-              <table  aria-label="Post Info"  class="table table-striped">
+              <table aria-label="Post Info" class="table table-striped">
                 <thead class="thead-dark">
                   <tr>
                     <th>#</th>
                     <th>Title</th>
-                    <th>Category</th>
                     <th>Date</th>
                     <th></th>
                   </tr>
@@ -120,92 +119,46 @@
                 <tbody>
                   <tr>
                     <td>1</td>
-                    <td>Post One</td>
                     <td>Web Development</td>
                     <td>Jan 09 2022</td>
                     <td>
                       <a href="details.html" class="btn btn-secondary">
-                        <em class="bi bi-chevron-double-right"></em>Details
+                        <em class="bi bi-chevron-double-right"></em> Details
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td>2</td>
-                    <td>Post Two</td>
                     <td>Tech Gadgets</td>
                     <td>March 23 2022</td>
                     <td>
                       <a href="details.html" class="btn btn-secondary">
-                        <em class="bi bi-chevron-double-right"></em>Details
+                        <em class="bi bi-chevron-double-right"></em> Details
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td>3</td>
-                    <td>Post Three</td>
-                    <td>Web Development</td>
+                    <td>Business</td>
                     <td>March 02 2022</td>
                     <td>
                       <a href="details.html" class="btn btn-secondary">
-                        <em class="bi bi-chevron-double-right"></em>Details
+                        <em class="bi bi-chevron-double-right"></em> Details
                       </a>
                     </td>
                   </tr>
                   <tr>
                     <td>4</td>
-                    <td>Post Four</td>
-                    <td>Business</td>
+                    <td>Health & Wellness</td>
                     <td>Fab 16 2022</td>
                     <td>
                       <a href="details.html" class="btn btn-secondary">
-                        <em class="bi bi-chevron-double-right"></em>Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>5</td>
-                    <td>Post Five</td>
-                    <td>Web Development</td>
-                    <td>Fab 20 2022</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <em class="bi bi-chevron-double-right"></em>Details
-                      </a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>6</td>
-                    <td>Post Six</td>
-                    <td>Health & Wellness</td>
-                    <td>Oct 22 2022</td>
-                    <td>
-                      <a href="details.html" class="btn btn-secondary">
-                        <em class="bi bi-chevron-double-right"></em>Details
+                        <em class="bi bi-chevron-double-right"></em> Details
                       </a>
                     </td>
                   </tr>
                 </tbody>
               </table>
-
-              <nav aria-label="Page" class="ms-4">
-                <ul class="pagination">
-                  <li class="page-item disabled">
-                    <a href="#" class="page-link">Previous</a>
-                  </li>
-                  <li class="page-item active">
-                    <a href="#" class="page-link">1</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link">2</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link">3</a>
-                  </li>
-                  <li class="page-item">
-                    <a href="#" class="page-link">Next</a>
-                  </li>
-                </ul>
-              </nav>
             </div>
           </div>
         </div>
@@ -223,11 +176,7 @@
         </div>
       </div>
     </footer>
-    <script>
 
-
-CKEDITOR.replace( 'editor' );
-    </script>
 
   </body>
 </html>
