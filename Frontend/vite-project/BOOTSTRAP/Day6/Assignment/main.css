@@ -1,0 +1,110 @@
+
+
+@media (max-width: 576px) {
+    #leftBar {
+        display: none;
+    }
+
+}
+
+
+    
+@media (max-width: 992px) {
+    #rightBar {
+         display: none;
+     }
+    
+
+}
+
+.sidebarOption{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.sidebarOption .bi  {
+font-size: 20px;
+padding: 12px;
+
+}
+
+.sidebarOption h2{
+    padding-top: 8px;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+.sidebarOption:hover{
+    background-color: #eff3f4    ;
+    border-radius: 30px;
+    transition: color 100ms ease-out;
+    
+}
+
+.rightBarOption:hover{
+    background-color: #e6e9e9   ;
+    border-radius: 30px;
+    transition: color 100ms ease-out;
+    
+}
+
+.sidebarOption.active{
+    color: #000000;
+}
+
+.sidebar_tweet{
+    width: 100%;
+    background-color: #1d9bf0;
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height:50px;
+    margin-top: 20px;
+}
+
+.follow{
+    width: 100%;
+    background-color: #0f1419;
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height:30px;
+
+}
+
+
+
+ .bi-twitter{
+    color: #1d9bf0;
+    font-size: 30px;
+    margin-left: 10px;
+}
+
+.col-1 .bi{
+    color: #1d9bf0;
+    font-size: 17px;
+
+}
+
+#topnav
+{
+	background-color: white;
+	height: 60px;
+    width: 100%;
+	opacity: 90%;
+}
+
+
+
+.square {
+    width: 100%;
+    padding-bottom: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+}
