@@ -4,25 +4,36 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="../../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Rutvik's Work</title>
 </head>
 <style>
-    body{background-color: antiquewhite;}
 
 </style>
 <body>
 
+  <div id="mySidenav" class=" h-full w-0 fixed top-0 left-0 pt-14 truncate bg-black/80 transition-all ">
+    <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
+    <h1  class="text-orange-400 p-2 pl-10 text-xl "><a href="tailwind_day1_practice.html">Day 1</a></h1>
+    <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Assignment/tailwind_day2_assignment.html">Day 2</a></h1>
 
-    <nav class="flex sticky top-0   space-x-4 bg-orange-400">
-        <a href="/index.html" class="md:text-2xl sm:text-xl sm:px-0 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
-        <a href="../../../HTML/Day1/Assignment/emp.html" class="md:text-2xl sm:text-xl sm:px-0 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">HTML</a>
-        <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-0 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">CSS</a>
-        <a href="../../../BOOTSTRAP/index.html" class="md:text-2xl sm:text-xl sm:px-0 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Bootstrap</a>
-        <a href="../../index.html" class="md:text-2xl sm:text-xl sm:px-0 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Tailwind</a>
-      </nav>
+  </div>
 
 
+  <div id="main">
 
+    <div class=" truncate bg-orange-400  top-0 w-full sticky">
+        <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
+        <a href="/index.html"                           class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
+        <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">HTML</a>
+        <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">CSS</a>
+        <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Bootstrap</a>
+        <a href="../../index.html"                            class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black">Tailwind</a>
+    </div>  
 
+    <h1>Tailwind > Day 1 > Practice</h1>
+<hr>
 
 
     <div class="text-center place-content-center">
@@ -190,5 +201,31 @@
   </div>
 
 </div>
+
+
+
+
+
+
+
+
+</div>
+
+
+<script>
+  function openNavM() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+
+  }
+</script>
+    
+
+
+
+
 </body>
 </html>
