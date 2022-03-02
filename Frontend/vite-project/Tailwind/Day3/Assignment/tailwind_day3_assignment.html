@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Rutvik's Work</title>
+</head>
+
+<body>
+<div class="bg-[url('../../../assets/hero-bg.jpg')] w-full   h-screen bg-cover  bg-blend-multiply bg-pink-200/90 truncate">
+    <div class="   h-20  w-full fixed  p-7  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60">
+        <button class="md:hidden text-2xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 z-30" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
+        <div class="hidden  md:block text-center">
+            <a href="/index.html"                           class="text-2xl  px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
+            <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">About</a>
+            <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Services</a>
+            <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Portfolio</a>
+            <a href="../../index.html"                            class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] ">News</a>
+            <a href="../../index.html"                            class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] ">Contact</a>
+        </div>   
+
+    </div> 
+    <h1 class=" mt-48 text-9xl"><span class="font-bold text-white hover:text-orange-700 hover:font-black">Hello,</span > <span class="text-orange-700 hover:text-white hover:font-bold">There!</span></h1>
+    <button class="bg-orange-700 shadow-lg shadow-orange-700/50 text-4xl text-white ml-2">Connect</button>
+    
+
+
+    <div id="mySidenav" class="h-full w-0  top-0 left-0 pt-8 truncate bg-black/80 transition-all z-50 sticky">
+        <button class="text-3xl px-9 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 " onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Home</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>About</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Services</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Portfolio</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>News</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Contact</a></h1>
+    </div>
+</div>
+
+<div class="w-full h-52 bg-gray-700">
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        function openNavM() {
+          document.getElementById("mySidenav").style.width = "250px";
+        }
+      
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+      
+        }
+      </script>
+          
+</body>
+</html>
