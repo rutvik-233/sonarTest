@@ -10,38 +10,259 @@
 </head>
 
 <body>
-<div class="bg-[url('../../../assets/hero-bg.jpg')] w-full   h-screen bg-cover  bg-blend-multiply bg-pink-200/90 truncate">
-    <div class="   h-20  w-full fixed  p-7  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60">
+<div  id="home" class="bg-[url('../../../assets/hero-bg.jpg')] w-full   h-screen bg-cover  bg-blend-multiply bg-pink-200/90 truncate">
+    <div  class="   h-20  w-screen fixed  p-7  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60">
         <button class="md:hidden text-2xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 z-30" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
         <div class="hidden  md:block text-center">
-            <a href="/index.html"                           class="text-2xl  px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
-            <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">About</a>
-            <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Services</a>
-            <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Portfolio</a>
-            <a href="../../index.html"                            class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] ">News</a>
-            <a href="../../index.html"                            class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] ">Contact</a>
+            <a class="text-2xl  px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" href="#home">Home</a>
+            <a class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" href="#services">Services</a>
+            <a class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" href="#portfolio">Portfolio</a>
+            <a class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" href="#testimonial">Testimonial</a>
+            <a class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] " href="#contact">Contact</a>
         </div>   
 
     </div> 
-    <h1 class=" mt-48 text-9xl"><span class="font-bold text-white hover:text-orange-700 hover:font-black">Hello,</span > <span class="text-orange-700 hover:text-white hover:font-bold">There!</span></h1>
-    <button class="bg-orange-700 shadow-lg shadow-orange-700/50 text-4xl text-white ml-2">Connect</button>
-    
 
 
-    <div id="mySidenav" class="h-full w-0  top-0 left-0 pt-8 truncate bg-black/80 transition-all z-50 sticky">
+    <div id="mySidenav" class="h-full w-0  top-0 left-0 pt-8 truncate bg-black/80 transition-all z-50 fixed">
         <button class="text-3xl px-9 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 " onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
-        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Home</a></h1>
-        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>About</a></h1>
-        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Services</a></h1>
-        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Portfolio</a></h1>
-        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>News</a></h1>
-        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a>Contact</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a href="#home">Home</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a href="#services">Services</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a href="#portfolio">Portfolio</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a href="#testimonial">Testimonial</a></h1>
+        <h1 class="text-white p-2 pl-10 text-2xl font-['Times_New_Roman'] hover:text-orange-400"><a href="#contact">Contact</a></h1>
     </div>
+
+    <div class="container ">
+      <h1 class=" mt-48 md:text-9xl sm:text-8xl text-6xl">
+          <span class="font-bold text-white hover:text-orange-700 hover:font-black">H</span >
+          <span class="font-bold text-white hover:text-orange-700 hover:font-black -ml-3 sm:-ml-8">e</span >
+          <span class="font-bold text-white hover:text-orange-700 hover:font-black -ml-3 sm:-ml-8">l</span >
+          <span class="font-bold text-white hover:text-orange-700 hover:font-black -ml-3 sm:-ml-8">l</span >
+          <span class="font-bold text-white hover:text-orange-700 hover:font-black -ml-3 sm:-ml-8">o</span >
+          <span class="font-bold text-white hover:text-orange-700 hover:font-black -ml-3 sm:-ml-8">,</span >
+
+
+         <span class="text-orange-700 hover:text-white hover:font-bold -ml-3" >T</span>  
+         <span class="text-orange-700 hover:text-white hover:font-bold -ml-3 sm:-ml-8" >h</span>  
+         <span class="text-orange-700 hover:text-white hover:font-bold -ml-3 sm:-ml-8" >e</span>   
+         <span class="text-orange-700 hover:text-white hover:font-bold -ml-3 sm:-ml-8" >r</span>   
+         <span class="text-orange-700 hover:text-white hover:font-bold -ml-3 sm:-ml-8" >e</span>   
+         <span class="text-orange-700 hover:text-white hover:font-bold -ml-3 sm:-ml-8" >!</span>        </h1>
+    </div>  
+
 </div>
 
-<div class="w-full h-52 bg-gray-700">
+<h1 class="text-center text-5xl text-black font-bold  mt-10 mb-10">Services</h1>
+
+
+<div id="services" class="grid md:grid-cols-1 lg:grid-cols-3 gap-4  bg-gradient-to-r from-indigo-500/80 via-pink-500/80 to-purple-500/80 w-full lg:h-72 h-screen p-3 text-center">
+  <div class="bg-gray-700 rounded-3xl ">
+    <em class="fa-solid fa-code text-9xl lg:mt-5 mt-20   bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl mt-2 font-bold" >Coding</h1>
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl">
+    <em class="fa-brands fa-soundcloud text-9xl lg:mt-5 mt-20 bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl mt-2 font-bold">Cloud</h1>
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl">
+    <em class="fa-solid fa-palette text-9xl lg:mt-5 mt-20 bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl mt-2 font-bold">Designing</h1>
+  </div>
+</div>
+
+
+
+
+
+
+
+<h1 class="text-center text-5xl text-black font-bold  mt-10 mb-10">Portfolio</h1>
+
+
+<div id="portfolio" class="grid grid-cols-2 lg:grid-cols-4 gap-4  bg-gradient-to-r from-indigo-500/80 via-pink-500/80 to-purple-500/80 w-full lg:h-72 h-screen p-3 text-center">
+  <div class="bg-gray-700 rounded-3xl ">
+    <em class="fa-solid fa-briefcase text-9xl lg:mt-5 mt-48   bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl mt-2 font-bold" >Project</h1>
+    <h1 class="text-white text-5xl mt-2 font-bold" >23</h1>
+
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl">
+    <em class="fa-solid fa-user-tie text-9xl lg:mt-5 mt-48 bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl  mt-2 font-bold">Clients</h1>
+    <h1 class="text-white text-5xl mt-2 font-bold" >234</h1>
+
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl">
+    <em class="fa-solid fa-award text-9xl lg:mt-5 mt-48 bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl mt-2 font-bold">Awards</h1>
+    <h1 class="text-white text-5xl mt-2 mb-4 font-bold" >4</h1>
+
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl">
+    <em class="fa-solid fa-hourglass-end text-9xl lg:mt-5 mt-48 bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text"></em>
+    <h1 class="text-white text-5xl mt-2 font-bold">Experience</h1>
+    <h1 class="text-white text-5xl mt-2 font-bold" >4</h1>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-4  bg-gradient-to-r from-indigo-500/80 via-pink-500/80 to-purple-500/80 w-full lg:h-96 h-screen p-3 text-center">
+  <div class="bg-gray-700 rounded-3xl px-5">
+    <h1 class="text-white text-5xl mt-16 lg:mt-5 font-bold" >E-Commerce</h1>
+
+    <div class="w-full bg-gray-200/80 h-12 text-center mt-5 mb-8 rounded-2xl">
+      <div class="bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 h-12 rounded-2xl w-9/12" ></div>
+    </div>
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl px-5">
+    <h1 class="text-white text-5xl mt-16 lg:mt-5 font-bold" >Management</h1>
+
+    <div class="w-full bg-gray-200/80 h-12 text-center mt-5 mb-8 rounded-2xl">
+      <div class="bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 h-12 rounded-2xl w-10/12" ></div>
+    </div>
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl px-5">
+    <h1 class="text-white text-5xl mt-16 lg:mt-5 font-bold" >Services</h1>
+
+    <div class="w-full bg-gray-200/80 h-12 text-center mt-5 mb-8 rounded-2xl">
+      <div class="bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 h-12 rounded-2xl w-8/12"></div>
+    </div>
+  </div>
+
+  <div class="bg-gray-700 rounded-3xl px-5">
+    <h1 class="text-white text-5xl mt-16 lg:mt-5 font-bold" >Marketing</h1>
+
+    <div class="w-full bg-gray-200/80 h-12 text-center mt-5 mb-8 rounded-2xl">
+      <div class="bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 h-12 rounded-2xl w-6/12"></div>
+    </div>
+  </div>
+</div>
+
+
+<h1 id="testimonial" class="text-center text-5xl text-black font-bold  mt-10 mb-10">Testimonial</h1>
+
+
+
+
+
+<div class="lg:flex lg:justify-center lg:gap-x-10 mb-10 text-center">
+  <div class="max-w-xl p-4 text-gray-800 bg-gray-700 rounded-2xl shadow-md  m-auto">
+    <div class="mb-2">
+      <p class="mb-2 text-center text-gray-100">
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        sapiente iusto esse. "
+      </p>
+      <div class="flex flex-col items-center justify-center">
+        <div
+          class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full "
+        >
+          <img
+            src="https://cdn.pixabay.com/photo/2017/05/19/12/38/entrepreneur-2326419__340.jpg"
+            alt="img"
+            class="object-cover object-center w-full h-full"
+          />
+        </div>
+        <h5 class="font-bold text-indigo-100">John Doe</h5>
+        <p class="text-sm text-gray-100">CEO / Founder</p>
+      </div>
+    </div>
+  </div>
+  <div class="max-w-xl p-4 text-gray-800 bg-gray-700 rounded-2xl shadow-md m-auto mt-4 lg:mt-0">
+    <div class="mb-2">
+      <p class="mb-2 text-center text-gray-100">
+        " Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique
+        sapiente iusto esse. "
+      </p>
+      <div class="flex flex-col items-center justify-center">
+        <div
+          class="w-12 h-12 overflow-hidden bg-gray-100 border-2 border-indigo-100 rounded-full "
+        >
+          <img
+            src="https://cdn.pixabay.com/photo/2021/07/14/17/32/manager-6466713__340.jpg"
+            alt="img"
+            class="object-cover object-center w-full h-full"
+          />
+        </div>
+        <h5 class="font-bold text-indigo-100">michael james</h5>
+        <p class="text-sm text-gray-100">web developer</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
+<div id="contact" class="grid grid-cols-1 lg:grid-cols-1   bg-gradient-to-r from-indigo-500/80 via-pink-500/80 to-purple-500/80 w-full lg:h-full h-screen  p-3 ">
+  <div class="bg-gray-700 rounded-3xl px-5">
+
+
+    <div class="grid grid-cols-1 lg:grid-cols-2  p-5">
+      <div class=" rounded-3xl  ">
+        <h1 class="text-center text-5xl text-white font-bold block lg:hidden mt-10">Contact</h1>
+        <div class="mt-8">
+          <span class="uppercase text-sm text-white font-bold">Full Name</span>
+          <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="text" placeholder="">
+        </div>
+
+        <div class="mt-8">
+          <span class="uppercase text-sm text-white font-bold">Email</span>
+          <input class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+            type="text">
+        </div>
+
+        <div class="mt-8">
+          <span class="uppercase text-sm text-white font-bold">Message</span>
+          <textarea
+            class="w-full h-32 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+        </div>
+
+        <div class="mt-8 mb-8">
+          <button
+            class="uppercase text-sm font-bold tracking-wide bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-gray-100 p-3 rounded-lg w-full focus:outline-none focus:shadow-outline">
+            Send Message
+          </button>
+        </div>
+
+      </div>
+
+      <div class="  rounded-3xl    text-center">
+        <h1 class="text-center text-5xl text-white font-bold hidden lg:block">Contact</h1>
+        <div class="grid xl:grid-cols-4 grid-cols-2">
+          <div><em class="fa-brands fa-facebook-f  text-9xl lg:text-8xl lg:mt-5  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text p-6"></em></div>
+          <div><em class="fa-brands fa-twitter     text-9xl lg:text-8xl lg:mt-5  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text p-6"></em></div>
+          <div><em class="fa-brands fa-linkedin-in text-9xl lg:text-8xl lg:mt-5  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text p-6"></em></div>
+          <div><em class="fa-brands fa-google      text-9xl lg:text-8xl lg:mt-5  bg-gradient-to-r from-indigo-500/60 via-pink-500/60 to-purple-500/60 text-transparent bg-clip-text p-6"></em></div>
+        </div>
+      </div>
+
+      
+    </div>
+
+
+  </div>
+
 
 </div>
+
 
 
 
