@@ -1,5 +1,5 @@
 module.exports = {
-  content: ["./Tailwind/**/*.{html,js}"],
+  content: ["./Tailwind/**/*.{html,js}", "./node_modules/tw-elements/dist/js/**/*.js"],
   theme: {
 
     extend: {
@@ -13,5 +13,5 @@ module.exports = {
   
     },
   },
-  plugins: [],
+  plugins: [require('tw-elements/dist/plugin')],
 }

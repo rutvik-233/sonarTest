@@ -1,9 +1,14 @@
 
 
-@media (max-width: 576px) {
+@media (max-width: 690px) {
     #leftBar {
         display: none;
     }
+
+    #main {
+        width: fit-content;
+    }
+
 
 }
 
