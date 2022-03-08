@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../Tailwind/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>
+
+  <title>Rutvik's Work</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class=" h-full w-0 fixed top-0 left-0 pt-14 truncate bg-black/80 transition-all ">
+    <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
+    <h1  class="text-white p-2 pl-10 text-xl"><a href="../Assignment/javascript_day1_assignment.html">Day 1 (Assignment)</a></h1>
+    <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day1_practice.html">Day 1 (Practice)</a></h1>
+
+
+  </div>
+
+
+  <div id="main">
+
+    <div class=" truncate bg-orange-400  top-0 w-full sticky">
+        <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
+        <a href="/index.html"                                 class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
+        <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">HTML</a>
+        <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">CSS</a>
+        <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Bootstrap</a>
+        <a href="../../../Tailwind/index.html"                class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" >Tailwind</a>
+        <a href="javascript_day1_assignment.html"             class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black" >JavaScript</a>
+    </div>  
+
+    <h1>JavaScript > Day 1 > Practice</h1>
+    <hr>
+
+    <div class="text-center ">
+        <button class=" w-fit px-5 mt-3 rounded-2xl h-10 bg-blue-500" onclick="find_higher()">Click Here For Number Prompt</button>
+    </div>
+ 
+    <div class="text-center mb-3">
+        <button class=" w-fit px-5 mt-3 rounded-2xl h-10 bg-green-500" onclick="display_city()">Click Here For City Prompt</button>
+    </div>
+
+    <h1 id="result_higher" class="text-center text-5xl"></h1>
+    <h1 id="display_sum" class="text-center text-5xl mt-10"></h1>
+
+
+    <script>
+        const city = ["Newyork", "Mumbai", "LasVegas", "Texas", "Surendranagar"];
+
+        function display_city() 
+            {
+                for(i=0;i<5;i++)
+                {
+                    alert(city[i]);
+                }
+            }
+
+
+        function find_higher() 
+        {
+            var num1 = prompt("Enter First Number");
+            var num2 = prompt("Enter Second Number");
+            var num3 = prompt("Enter Third Number");
+            var reg = RegExp('^[0-9]*$');
+
+
+            
+
+            if (reg.test(num1)==false || reg.test(num2)==false || reg.test(num3)==false)
+            {
+                document.getElementById("result_higher").innerHTML ="Please Enter Numbers Only";
+            }
+
+
+
+            else if (num1=="" || num2=="" || num3=="")
+            {
+                document.getElementById("result_higher").innerHTML ="Values Can Not Be Blank";
+            }
+
+            else
+            {
+                var big = num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3) ;
+                var sum=Number(0);
+                if(num1>=40){sum=sum+Number(num1);}
+                if(num2>=40){sum=sum+Number(num2);}
+                if(num3>=40){sum=sum+Number(num3);}
+                
+                document.getElementById("result_higher").innerHTML =big + " is Higher Number";
+                document.getElementById("display_sum").innerHTML = + " is Sum of That Numbers Which Are Greater Than 40";
+            }
+
+        }
+    </script>
+
+
+
+  </div>
+
+
+
+
+
+  <script>
+    function openNavM() {
+      document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+
+    }
+  </script>
+
+</body>
+</html>
