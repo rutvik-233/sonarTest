@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../Tailwind/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>
+
+  <title>Rutvik's Work</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class=" h-full w-0 fixed top-0 left-0 pt-14 truncate bg-black/80 transition-all ">
+        <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Assignment/javascript_day1_assignment.html">Day 1 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Practice/javascript_day1_practice.html">Day 1 (Practice)</a></h1>
+        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day2_assignment.html">Day 2 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../Practice/javascript_day2_practice.html">Day 2 (Practice)</a></h1>
+  </div>
+
+
+    <div id="main">
+
+        <div class=" truncate bg-orange-400  top-0 w-full sticky">
+            <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
+            <a href="/index.html"                                 class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
+            <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">HTML</a>
+            <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">CSS</a>
+            <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Bootstrap</a>
+            <a href="../../../Tailwind/index.html"                class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" >Tailwind</a>
+            <a href="../../Day1/Assignment/javascript_day1_assignment.html"             class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black" >JavaScript</a>
+        </div>  
+
+        <h1>JavaScript > Day 2 > Assignment</h1>
+        <hr>
+
+        <div class="w-96  flex-row mx-auto">
+            <div class="text-center">
+                <span class=" text-sm text-black font-bold">Enter Date in MM-DD-YYYY Format</span>
+                <input value="03-23-2001" id="input_date" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5" onclick="check_date()">Validate</button>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    
+    <script>
+
+    function check_date()
+    {
+        var num2=document.getElementById("input_date").value;
+        var myArray = num2.split("-");
+        
+        var reg_year = RegExp("^[0-9]{4}$");
+        var reg = RegExp("^[0-9]{2}$");
+
+        if( myArray[0]>0 && myArray[0]<=12 && (reg.test(myArray[0])) && (reg.test(myArray[1])) && (reg_year.test(myArray[2]))          )
+        {
+            if(myArray[1]>0 && ( (myArray[0]==1 && myArray[1]<=31) || (myArray[0]==3 && myArray[1]<=31)   || (myArray[0]==4 && myArray[1]<=30)   || (myArray[0]==5 && myArray[1]<=31)  || (myArray[0]==6 && myArray[1]<=30)  || (myArray[0]==3 && myArray[1]<=31)  || (myArray[0]==8 && myArray[1]<=31)  || (myArray[0]==9 && myArray[1]<=30)  || (myArray[0]==10 && myArray[1]<=31)  || (myArray[0]==11 && myArray[1]<=30)  || (myArray[0]==12 && myArray[1]<=31)  || (myArray[0]==2 && ( (myArray[2]%4==0 && myArray[1]<=29)||(myArray[2]%4!=0 && myArray[1]<=28)   )  )                    )          )
+            {
+                if(myArray[2]>1900 && myArray[2]<3000)
+                {
+                    alert("Right Date Format"); 
+
+                }
+                else
+                {
+                    alert("Wrong Date Format")
+                }
+
+            }
+            else
+            {
+                alert("Wrong Date Format")
+            }
+
+        }
+        else
+        {
+            alert("Wrong Date Format")
+        }
+
+
+    }
+
+
+    </script>
+
+
+
+   
+
+
+
+    <script>
+        function openNavM() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
+      
+
+
+
+
+</body>
+</html>

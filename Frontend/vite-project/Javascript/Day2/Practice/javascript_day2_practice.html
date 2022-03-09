@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../Tailwind/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>
+
+  <title>Rutvik's Work</title>
+</head>
+
+<body >
+
+  <div id="mySidenav" class=" h-full w-0 fixed top-0 left-0 pt-14 truncate bg-black/80 transition-all ">
+        <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Assignment/javascript_day1_assignment.html">Day 1 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Practice/javascript_day1_practice.html">Day 1 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../Assignment/javascript_day2_assignment.html">Day 2 (Assignment)</a></h1>
+        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day2_practice.html">Day 2 (Practice)</a></h1>
+  </div>
+
+
+    <div id="main">
+
+        <div class=" truncate bg-orange-400  top-0 w-full sticky">
+            <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
+            <a href="/index.html"                                 class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
+            <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">HTML</a>
+            <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">CSS</a>
+            <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Bootstrap</a>
+            <a href="../../../Tailwind/index.html"                class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" >Tailwind</a>
+            <a href="../../Day1/Assignment/javascript_day1_assignment.html"             class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black" >JavaScript</a>
+        </div>  
+
+        <h1>JavaScript > Day 2 > Practice</h1>
+        <hr>
+
+
+        <div class="w-96  flex-row mx-auto">
+            <div class="mt-8 text-center">
+                <span class=" text-sm text-black font-bold ">Please Enter String Here</span>
+                <input value="" id="text_num1" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text" placeholder="">
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5 " onclick="string_blank()">String Blank Or Not</button>
+
+            </div> 
+
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+            <div class="text-center">
+                <span class=" text-sm text-black font-bold">String To Array</span>
+                <input value="ab cd ef" id="text_num2" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5" onclick="string_to_array()">Convert</button>
+            </div>
+
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+
+
+            <div class=" text-center">
+                <span class=" text-sm text-black font-bold">Enter Your String</span>
+                <input value="" id="string_char_input" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+                <input value="" id="string_char_start" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number" placeholder="Starting Position(Index Starting From 1)">
+                <input value="" id="string_char_end" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number" placeholder="Ending Position">
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5" onclick="string_char()">Get Selected Text</button>
+            </div>
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+
+            <div class=" text-center h-fit  ">
+                <span class=" text-sm text-black font-bold">Array Push Pop</span>
+                <input value="ab" id="array_input" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5   " onclick="array_push()">Push</button>
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5 " onclick="array_pop()">Pop</button>
+                <div class=""><h1 id="array_result" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg h-12 " type="text"></h1></div>
+
+            </div>
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+
+            <div class="text-center ">
+                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl" onclick="display_date()">Click Here For Date</button>
+            </div> 
+
+
+            
+
+
+        </div>
+
+    </div>
+
+    <script>
+
+
+
+
+        function string_blank()
+        {            
+            var num1=document.getElementById("text_num1").value;
+
+            if (num1==""){
+                alert("String Is Blank")
+            }
+            else{
+                alert("String Is Not Blank")
+            }
+
+        }
+
+        function string_to_array()
+        {
+            var num2=document.getElementById("text_num2").value;
+            var myArray = num2.split(" ");
+
+            alert("[ "+myArray+" ]"); 
+        }
+
+
+        function string_char()
+        {
+            var text=document.getElementById("string_char_input").value;
+            var start=document.getElementById("string_char_start").value;
+            var end=document.getElementById("string_char_end").value;
+            var letter="";
+
+            for(i=start-1;i<=end-1;i++)
+            {
+            letter = letter + text.charAt(i);
+            }
+            alert(letter)
+        }
+    
+
+
+        var array_result=[]
+        function array_push()
+        {            
+            var temp=document.getElementById("array_input").value;
+
+            array_result.push(temp);
+            document.getElementById("array_result").innerHTML = "[ "+array_result+ " ]";
+
+
+        }
+
+
+        function array_pop()
+        {            
+            array_result.pop();
+            document.getElementById("array_result").innerHTML = "[ "+array_result+ " ]";
+
+
+        }
+
+        function display_date() 
+        {
+
+            var today = new Date();
+
+            var date = today.getDate()+'-'+today.getFullYear()+'-'+(today.getMonth()+1);
+
+            alert(date);
+
+
+        }
+    
+
+
+    </script>
+
+    <script>
+        function openNavM() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
+      
+
+
+
+
+</body>
+</html>

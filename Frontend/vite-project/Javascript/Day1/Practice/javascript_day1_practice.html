@@ -16,10 +16,11 @@
     <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
     <h1  class="text-white p-2 pl-10 text-xl"><a href="../Assignment/javascript_day1_assignment.html">Day 1 (Assignment)</a></h1>
     <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day1_practice.html">Day 1 (Practice)</a></h1>
-
+    <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Assignment/javascript_day2_assignment.html">Day 2 (Assignment)</a></h1>
+    <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Practice/javascript_day2_practice.html">Day 2 (Practice)</a></h1>
 
   </div>
-
+  
 
   <div id="main">
 
@@ -85,13 +86,14 @@
             else
             {
                 var big = num1 > num2 ? (num1 > num3 ? num1 : num3) : (num2 > num3 ? num2 : num3) ;
-                var sum=Number(0);
+                var sum=0;
                 if(num1>=40){sum=sum+Number(num1);}
                 if(num2>=40){sum=sum+Number(num2);}
                 if(num3>=40){sum=sum+Number(num3);}
                 
-                document.getElementById("result_higher").innerHTML =big + " is Higher Number";
-                document.getElementById("display_sum").innerHTML = + " is Sum of That Numbers Which Are Greater Than 40";
+                document.getElementById("result_higher").innerHTML ="<span class='text-orange-400'>"+big +"</span>"+ " is Higher Number";
+
+                if(sum!=NaN && sum>=40){document.getElementById("display_sum").innerHTML = "<span class='text-orange-400'>"+sum +"</span>"+ " is Sum of That Numbers Which Are Greater Than 40";}
             }
 
         }
