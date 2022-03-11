@@ -16,12 +16,12 @@
         <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Assignment/javascript_day1_assignment.html">Day 1 (Assignment)</a></h1>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Practice/javascript_day1_practice.html">Day 1 (Practice)</a></h1>
-        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day2_assignment.html">Day 2 (Assignment)</a></h1>
-        <h1  class="text-white p-2 pl-10 text-xl"><a href="../Practice/javascript_day2_practice.html">Day 2 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Assignment/javascript_day2_assignment.html">Day 2 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Practice/javascript_day2_practice.html">Day 2 (Practice)</a></h1>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day3/Assignment/javascript_day3_assignment.html">Day 3 (Assignment)</a></h1>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day3/Practice/javascript_day3_practice.html">Day 3 (Practice)</a></h1>
-        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day4/Assignment/javascript_day4_assignment.html">Day 4 (Assignment)</a></h1>
-        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day4/Practice/javascript_day4_practice.html">Day 4 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../Assignment/javascript_day4_assignment.html">Day 4 (Assignment)</a></h1>
+        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day4_practice.html">Day 4 (Practice)</a></h1>
 
     </div>
 
@@ -38,15 +38,19 @@
             <a href="../../Day1/Assignment/javascript_day1_assignment.html"             class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black" >JavaScript</a>
         </div>  
 
-        <h1>JavaScript > Day 2 > Assignment</h1>
+        <h1>JavaScript > Day 4 > Practice</h1>
         <hr>
 
-        <div class="w-96  flex-row mx-auto">
-            <div class="text-center">
-                <span class=" text-sm text-black font-bold">Enter Date in MM-DD-YYYY Format</span>
-                <input value="03-23-2001" id="input_date" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
-                <button class="bg-orange-400 w-fit px-5 h-10 rounded-2xl mt-5" onclick="check_date()">Validate</button>
-            </div>
+        <div class="w-96 text-center mx-auto">
+            <!-- <div class="w-48 text-center mx-auto my-5"><h1 id="display_time" class="w-48 bg-gray-300 text-gray-900 p-3 rounded-lg h-12 " type="text"></h1></div> -->
+            <input placeholder="Enter Number Only" value="" id="a" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number">
+
+            <button id="button_start" class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="square(a.value,print)" >Get Squre</button>
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="print_x();">Alert x</button>
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="print_y();">Alert x</button>
+
+    
+           
         </div>
 
 
@@ -56,44 +60,31 @@
     
     <script>
 
-    function check_date()
-    {
-        var num2=document.getElementById("input_date").value;
-        var myArray = num2.split("-");
-        
-        var reg_year = RegExp("^[0-9]{4}$");
-        var reg = RegExp("^[0-9]{2}$");
-
-        if( myArray[0]>0 && myArray[0]<=12 && (reg.test(myArray[0])) && (reg.test(myArray[1])) && (reg_year.test(myArray[2]))          )
+        function square(a,callback)
         {
-            if(myArray[1]>0 && ( (myArray[0]==1 && myArray[1]<=31) || (myArray[0]==3 && myArray[1]<=31)   || (myArray[0]==4 && myArray[1]<=30)   || (myArray[0]==5 && myArray[1]<=31)  || (myArray[0]==6 && myArray[1]<=30)  || (myArray[0]==3 && myArray[1]<=31)  || (myArray[0]==8 && myArray[1]<=31)  || (myArray[0]==9 && myArray[1]<=30)  || (myArray[0]==10 && myArray[1]<=31)  || (myArray[0]==11 && myArray[1]<=30)  || (myArray[0]==12 && myArray[1]<=31)  || (myArray[0]==2 && ( (myArray[2]%4==0 && myArray[1]<=29)||(myArray[2]%4!=0 && myArray[1]<=28)   )  )                    )          )
-            {
-                if(myArray[2]>1900 && myArray[2]<3000)
-                {
-                    alert("Right Date Format"); 
-
-                }
-                else
-                {
-                    alert("Wrong Date Format")
-                }
-
-            }
-            else
-            {
-                alert("Wrong Date Format")
-            }
-
+            var ans=a*a;
+            callback(ans)
         }
-        else
+        function print(c)
+        {console.log("ab")
+            alert("Square="+c)
+        }
+
+        var x=1
+
+        function print_x()
         {
-            alert("Wrong Date Format")
+            var x=2
+            alert("x="+x)
+        }
+
+        function print_y()
+        {
+            alert("x="+x)
         }
 
 
-    }
-
-
+   
     </script>
 
 
