@@ -42,14 +42,14 @@
         <hr>
 
         <div class="w-96 text-center mx-auto">
-            <!-- <div class="w-48 text-center mx-auto my-5"><h1 id="display_time" class="w-48 bg-gray-300 text-gray-900 p-3 rounded-lg h-12 " type="text"></h1></div> -->
             <input placeholder="Enter Number Only" value="" id="a" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number">
-
             <button id="button_start" class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="square(a.value,print)" >Get Squre</button>
             <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="print_x();">Alert x</button>
-            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="print_y();">Alert x</button>
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="print_y();">String</button>
 
-    
+            <input placeholder="Enter Your String" value="" id="string" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="get_string();">Promise</button>
+
            
         </div>
 
@@ -88,7 +88,31 @@
     </script>
 
 
+    <script>
+        
+        function get_string(){
+            let str = document.getElementById('string').value;
+            regX = /[a-zA-Z]$/;
+            let promise  = new Promise(function(resolove,reject){
+                setTimeout(() => {
+                    if(regX.test(str))
+                    {
+                    resolove(str.split('').reverse().join(''))
+                    }
+                    else
+                    {
+                        reject('Wrong Input')
+                    }    
+                }, 500);
+                
+            });
+            promise.then(
+            function(resolove){alert(resolove)},
+            function(reject){alert(reject)}
+            );
+        }
 
+    </script>
    
 
 
