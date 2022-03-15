@@ -20,11 +20,11 @@
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Practice/javascript_day2_practice.html">Day 2 (Practice)</a></h1>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day3/Assignment/javascript_day3_assignment.html">Day 3 (Assignment)</a></h1>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day3/Practice/javascript_day3_practice.html">Day 3 (Practice)</a></h1>
-        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day4_assignment.html">Day 4 (Assignment)</a></h1>
-        <h1  class="text-white p-2 pl-10 text-xl"><a href="../Practice/javascript_day4_practice.html">Day 4 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day4/Assignment/javascript_day4_assignment.html">Day 4 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day4/Practice/javascript_day4_practice.html">Day 4 (Practice)</a></h1>
         <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day5/Practice/javascript_day5_practice.html">Day 5 (Practice)</a></h1>
-        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day6/Assignment/javascript_day6_assignment.html">Day 6 (Assignment)</a></h1>
-        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day6/Practice/javascript_day6_practice.html">Day 6 (Practice)</a></h1>
+        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day6_assignment.html">Day 6 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../Practice/javascript_day6_practice.html">Day 6 (Practice)</a></h1>
 
     </div>
 
@@ -41,15 +41,10 @@
             <a href="../../Day1/Assignment/javascript_day1_assignment.html"             class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black" >JavaScript</a>
         </div>  
 
-        <h1>JavaScript > Day 4 > Assignment</h1>
+        <h1>JavaScript > Day 6 > Assignment</h1>
         <hr>
 
         <div class="w-96 text-center mx-auto">
-            <div class="w-48 text-center mx-auto my-5"><h1 id="display_time" class="w-48 bg-gray-300 text-gray-900 p-3 rounded-lg h-12 " type="text"></h1></div>
-            <button id="button_start" class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="start() ; this.onclick=null;" >Start Exam</button>
-            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="end();">Submit Exam</button>
-
-    
            
         </div>
 
@@ -58,80 +53,8 @@
 
     </div>
     
-    <script>
-        var x;
-        var distance
-
-    function start()
-    {
 
 
-            // Set the date we're counting down to
-        var countDownDate = new Date().getTime()  +60000;
-
-
-        // Update the count down every 1 second
-        var x = setInterval(function() 
-        {
-
-            // Get today's date and time
-            var now = new Date().getTime();
-                
-            // Find the distance between now and the count down date
-            var distance = countDownDate - now;
-
-
-            // Time calculations for days, hours, minutes and seconds
-            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-                
-            // Output the result in an element with id="demo"
-            document.getElementById("display_time").innerHTML = hours + "h "
-            + minutes + "m " + seconds + "s ";
-           
-
-                
-            // If the count down is over, write some text 
-            if (distance < 0) 
-            {
-                alert("Successfully Submited ")
-                clearInterval(x);
-                document.getElementById("display_time").innerHTML = "Submitted";
-            }
-
-
-
-            this.end = function() 
-            { 
-                if(distance>0)
-                {
-                    if (confirm('You Are Going To Submit Your Exam!! Are You Sure?'))
-                    {
-                    clearInterval(x);
-                    
-                    document.getElementById("display_time").innerHTML = "Submitted";;
-                    distance=0
-                    }
-
-                }
-                else
-                {
-                    alert("Exam Already Submitted")
-                }
-                
-
-            }
-
-
-        }, 1000);
-    }
-
-
-
-   
-    </script>
 
 
     <script>

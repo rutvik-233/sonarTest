@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../../Tailwind/dist/output.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="../../../node_modules/tw-elements/dist/js/index.min.js"></script>
+
+  <title>Rutvik's Work</title>
+</head>
+
+<body>
+
+  <div id="mySidenav" class=" h-full w-0 fixed top-0 left-0 pt-14 truncate bg-black/80 transition-all ">
+        <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="closeNav()"><em class="fa-solid fa-xmark"></em></button>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Assignment/javascript_day1_assignment.html">Day 1 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day1/Practice/javascript_day1_practice.html">Day 1 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Assignment/javascript_day2_assignment.html">Day 2 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day2/Practice/javascript_day2_practice.html">Day 2 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day3/Assignment/javascript_day3_assignment.html">Day 3 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day3/Practice/javascript_day3_practice.html">Day 3 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day4/Assignment/javascript_day4_assignment.html">Day 4 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day4/Practice/javascript_day4_practice.html">Day 4 (Practice)</a></h1>
+        <h1  class="text-orange-400 p-2 pl-10 text-xl"><a href="javascript_day5_practice.html">Day 5 (Practice)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day6/Assignment/javascript_day6_assignment.html">Day 6 (Assignment)</a></h1>
+        <h1  class="text-white p-2 pl-10 text-xl"><a href="../../Day6/Practice/javascript_day6_practice.html">Day 6 (Practice)</a></h1>
+
+    </div>
+
+
+    <div id="main">
+
+        <div class=" truncate bg-orange-400  top-0 w-full sticky">
+            <button class="md:text-2xl sm:text-xl px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900" onclick="openNavM()"><em class="fa-solid fa-bars"></em></button>
+            <a href="/index.html"                                 class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Home</a>
+            <a href="../../../HTML/Day1/Assignment/emp.html"      class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">HTML</a>
+            <a href="../../../CSS/Day1/Assignment/cssResume.html" class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">CSS</a>
+            <a href="../../../BOOTSTRAP/index.html"               class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']">Bootstrap</a>
+            <a href="../../../Tailwind/index.html"                class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman']" >Tailwind</a>
+            <a href="../../Day1/Assignment/javascript_day1_assignment.html"             class="md:text-2xl sm:text-xl sm:px-1 md:px-3 py-2 text-white  hover:bg-slate-100 hover:text-slate-900 font-['Times_New_Roman'] font-black" >JavaScript</a>
+        </div>  
+
+        <h1>JavaScript > Day 5 > Practice</h1>
+        <hr>
+
+        <div class="w-96 text-center mx-auto">
+            <input placeholder="Enter Radius Of Circle" value="" id="a" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number">
+            <button id="button_start" class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="area_of_circle(a.value)" >Get Area Of Circle</button>
+            
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+            <input placeholder="Enter Width Of Rectangle" value="" id="height" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number">
+            <input placeholder="Enter Height Of Rectangle" value="" id="width" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="number">
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="area_of_rectangle(height.value,width.value)">Area of Rectangle</button>
+            
+            <div class="h-1 my-2 bg-amber-600"></div>
+ 
+            <h1 placeholder="" value="Counter Value Display Here" id="display_counter" class="w-full h-12 bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">Counter Value Display Here</h1>
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="myFunction();">Counter (Closure)</button>
+
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="display_emp();">Display (Apply)</button>
+            <h1 placeholder="" value="" id="display_emp" class="w-full h-15 bg-gray-300 text-gray-900 mb-8 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">Employee Info Display Here</h1>
+
+            <div class="h-1 my-2 bg-amber-600"></div>
+
+            <input placeholder="Enter First Name "        id="fname" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+            <input placeholder="Enter Last Name "    id="lname" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+            <input placeholder="Enter Designation " id="desig" class="w-full bg-gray-300 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">
+            <button class="bg-orange-400 w-48 px-5 h-10 rounded-2xl my-5" onclick="get_details();">Submit (Call)</button>
+            <h1 placeholder="" value="" id="display_fname" class="w-full h-15 bg-gray-300 text-gray-900 mb-8 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">Details Display Here</h1>
+            <h1 placeholder="" value="" id="display_lname" class="w-full h-15 bg-gray-300 text-gray-900 mb-8 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">Details Display Here</h1>
+            <h1 placeholder="" value="" id="display_desig" class="w-full h-15 bg-gray-300 text-gray-900 mb-8 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline" type="text">Details Display Here</h1>
+
+
+           
+        </div>
+
+
+
+
+    </div>
+    
+    <script>
+
+        const area_of_circle = function(r) {alert("Area Of Circle="+r*r*3.14) }
+
+        const area_of_rectangle = new Function("height", "width", "alert('Area Of Rectangle=' +height*width)");
+
+
+        const add = (function () {
+        let counter = 0;
+        return function () {counter += 1; return counter;}
+        })();
+
+        function myFunction(){
+        document.getElementById("display_counter").innerHTML = add();
+        }
+
+
+
+        function display_emp() 
+        {
+            const employee = 
+            {
+                empName: function () {
+                    return "<span class='font-bold'>Name : </span>" + this.firstName + " " + this.lastName + "<br>" + "<span class='font-bold'>Age : </span>" + this.age;
+                }
+            }
+            const emp1 = 
+            {
+                firstName: "RutviK",
+                lastName: "K",
+                age: "21"
+            }
+            document.getElementById('display_emp').innerHTML = employee.empName.apply(emp1);
+        }
+
+
+        function get_details() {
+
+            function funCall(firstName, lastName, designation) {
+                this.firstName = firstName;
+                this.lastName = lastName;
+                this.designation = designation;
+            }
+            const newFun = new funCall(fname.value,lname.value,desig.value)
+            {
+                document.getElementById('display_fname').innerHTML ="<span class='font-bold'>First Name : </span>" + newFun.firstName;
+                document.getElementById('display_lname').innerHTML ="<span class='font-bold'>Last Name : </span>" + newFun.lastName;
+                document.getElementById('display_desig').innerHTML ="<span class='font-bold'>Designation : </span>" + newFun.designation;
+            }
+        }
+
+    </script>
+   
+
+
+
+    <script>
+        function openNavM() {
+        document.getElementById("mySidenav").style.width = "250px";
+        }
+
+        function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+
+        }
+    </script>
+      
+
+
+
+
+</body>
+</html>
