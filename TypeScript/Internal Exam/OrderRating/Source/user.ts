@@ -145,7 +145,7 @@ export class Rating {
             temp.push(ele.rating)
         }
 
-        temp.sort()
+        // temp.sort()
         temp.reverse()
 
             for(let element of temp){
