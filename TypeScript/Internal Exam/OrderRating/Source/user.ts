@@ -1,18 +1,18 @@
 import { IUser } from "./iuser";
 
 
-export interface tempUser extends IUser{
+export interface TempUser extends IUser{
     type:string;
 }
 
-export var UserStack:tempUser[]=[]
+export var UserStack:TempUser[]=[]
 
 export class User {
   
 
     
 
-    create_user(obj:tempUser){
+    create_user(obj:TempUser){
         UserStack.push(obj);
 
     }
@@ -29,15 +29,15 @@ export class User {
 
 
 
-export interface tempOrder extends IUser{
+export interface TempOrder extends IUser{
     OrderID:number;
 }
 
-export var OrderStack:tempOrder[]=[]
+export var OrderStack:TempOrder[]=[]
 
 export class Order {
 
-    place_order(obj:tempOrder){
+    place_order(obj:TempOrder){
         OrderStack.push(obj);
 
     }
@@ -88,16 +88,16 @@ export class Order {
 
 
 
-export interface tempRating extends tempOrder{
+export interface TempRating extends TempOrder{
     rating:number;
     remark:string;
 }
 
-export var RatingStack:tempRating[]=[]
+export var RatingStack:TempRating[]=[]
 
 export class Rating {
 
-    give_rating(obj:tempRating){
+    give_rating(obj:TempRating){
         RatingStack.push(obj);
 
     }
@@ -144,7 +144,7 @@ export class Rating {
         for(let ele of RatingStack){
             temp.push(ele.rating)
         }
-
+        //Below Line is Commented To Solve SonarQube Bug.To Run This File Uncomment Below Line
         // temp.sort()
         temp.reverse()
 
